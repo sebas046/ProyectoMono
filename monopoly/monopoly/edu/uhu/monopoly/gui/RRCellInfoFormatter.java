@@ -8,7 +8,7 @@ public class RRCellInfoFormatter implements CellInfoFormatter {
     public String format(Cell cell) {
         RailRoadCell c = (RailRoadCell)cell;
         StringBuffer buf = new StringBuffer();
-        Player owner = cell.getOwner();
+        Player owner = cell.getProprietary();
         String ownerName = "";
         if(owner != null) {
         	ownerName = owner.getName();
@@ -17,7 +17,7 @@ public class RRCellInfoFormatter implements CellInfoFormatter {
                 .append(cell.getName())
                 .append("</font></b><br>")
                 .append("$").append(c.getPrice())
-				.append("<br>Owner: ").append(ownerName)
+				.append("<br>proprietary: ").append(ownerName)
                 .append("</html>");
         return buf.toString();
     }
