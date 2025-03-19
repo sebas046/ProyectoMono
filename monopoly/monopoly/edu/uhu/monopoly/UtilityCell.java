@@ -34,5 +34,6 @@ public class UtilityCell extends Cell {
 				currentPlayer.payRentTo(proprietary, getRent(diceRoll));
 			}
 		}
+		return true;
 	}
 }

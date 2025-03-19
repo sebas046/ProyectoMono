@@ -9,6 +9,7 @@ public class GoCell extends Cell {
 	}
 
 	public boolean playAction(String msg) {
+		return true;
 	}
 	
 	void setName(String name) {

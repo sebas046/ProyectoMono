@@ -52,6 +52,7 @@ public class PropertyCell extends Cell {
 				currentPlayer.payRentTo(proprietary, getRent());
 			}
 		}
+		return true;
 	}
 
 	public void setColorGroup(String colorGroup) {

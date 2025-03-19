@@ -12,5 +12,6 @@ public class GoToJailCell extends Cell {
 		Player currentPlayer = GameMaster.instance().getCurrentPlayer();
 		JailCell jail = (JailCell)(GameMaster.instance().getGameBoard().queryCell("Jail"));
 		GameMaster.instance().sendToJail(currentPlayer);
+		return true;
 	}
 }
